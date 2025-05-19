@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio de Ícones</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
+    .icon-gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+    .icon-gallery img {
+      width: 100px; height: 100px; object-fit: contain;
+      pointer-events: none; /* impede botão direito */
+      user-select: none; /* impede seleção */
+    }
+  </style>
+  <script>
+    // Desativa botão direito
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</head>
+<body>
+  <h1>Meus Ícones</h1>
+  <div class="icon-gallery">
+    <img src="icons/icon1.png" alt="Ícone 1">
+    <img src="icons/icon2.png" alt="Ícone 2">
+    <img src="icons/icon3.png" alt="Ícone 3">
+    <!-- adicione mais conforme necessário -->
+  </div>
+</body>
+</html>
